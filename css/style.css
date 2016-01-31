@@ -5,6 +5,13 @@ body {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  /*для сетки*/
+  background: #FFC973;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 h1 {
   font-size: 21px;
@@ -20,4 +27,108 @@ h2 {
 }
 p {
   font-weight: 400;
+}
+.container {
+  max-width: 1200px;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 0 10px;
+  /*для сетки*/
+  background: #BEF56E;
+}
+.main-header {
+  margin-bottom: 77px;
+}
+.main-navigation {
+  /*Не смог этим класом ничего выровнять*/
+}
+.main-menu {
+  list-style: none;
+  text-align: center;
+  margin-top: -10px;
+  background: white;
+  height: 57px;
+}
+.main-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 70px;
+}
+.welcome {
+  width: 458px;
+  height: 352px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 135px;
+}
+.sedona-intro {
+  text-align: center;
+  margin-bottom: 57px;
+}
+.item-one-left {
+  text-align: center;
+  height: 258px;
+  /*тут не смог заставить в одну линии выстроитеться пришлось вместо 400 300*/
+  width: 300px;
+  float: left;
+}
+.item-one-right {
+  /*height: 258px;*/
+  min-width: auto;
+  float: right;
+  margin-right: -10px;
+}
+.feature-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 328px;
+  margin: 50px 30px 85px;
+}
+.item-two {
+  margin-bottom: 180px;
+}
+.item-two-left {
+  height: 258px;
+  min-width: 512px;
+  float: left;
+  margin-left: -10px;
+}
+.item-two-right {
+  text-align: center;
+  height: 258px;
+  /*тут не смог заставить в одну линии выстроитеться пришлось вместо 400 300*/
+  width: 300px;
+  float: right;
+}
+.item3-5 {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.item-three {
+  width: 328px;
+  float: left;
+  margin-left: 120px;
+}
+.item-four {
+  width: 328px;
+  float: left;
+}
+.item-five {
+  width: 328px;
+  float: left;
+}
+.booking-hotel {
+  text-align: center;
+}
+.page-footer {
+  height: 120px;
+}
+.footer-column {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 11%;
+}
+.footer-column:last-child {
+  padding-right: 0px;
 }
