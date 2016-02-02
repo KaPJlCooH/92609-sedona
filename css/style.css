@@ -163,22 +163,16 @@ p {
   font-size: 14px;
   padding-right:5%;
 }
-.search-result figure {
-  width: 135px;
-  height: 90px;
-    float: left;
-    width: 12.5%;
+.hotel-preview {float:left; padding:10px 0;}
+.hotel-block {float:left;}
+.hotel-block h3 {
+margin-bottom:0;}
+.btns a{padding:0 5px;}
+
+.hotel-block p{
+  display:inline-block;
+  padding: 0 5px;
 }
-.search-result section {
-    float: left;
-    width: 31%;
-    padding-right: 30%;
-}
-.hotel-block p {
-  display: inline-block;
-  padding-right: 5%;
-}
-.search-result>div {
-    float: right;
-    width: 20%;
+.star-rating {
+  float:right;
 }
