@@ -35,6 +35,10 @@ p {
   /*для сетки*/
   background: #BEF56E;
 }
+.inner-container {
+  padding-left: 6%;
+  padding-right: 6%;
+}
 .main-menu {
   list-style: none;
   text-align: center;
@@ -52,17 +56,24 @@ p {
 }
 .welcome {
   width: 100%;
-  /*height: px;*/
-  padding-top: 77px;
+  padding: 75px 0;
   position: relative;
   text-align: center;
 }
 .sedona-intro {
   text-align: center;
+  padding-top: 57px;
 }
 .sedona-intro h1 {
-  width: 40%;
-  padding-left: 30%;
+  margin: 0;
+  width: 55%;
+  padding: 0px 25%;
+  padding-bottom: 28px;
+}
+.sedona-intro p {
+  margin: 0;
+  padding-top: 1px;
+  padding-bottom: 50px;
 }
 .item-one-left {
   text-align: center;
@@ -81,8 +92,19 @@ p {
   text-align: center;
   float: left;
   width: 33.3%;
-  padding: 50px 30px 85px;
+  padding: 61px 0px 63px;
   box-sizing: border-box;
+}
+.feature-item-down {
+  text-align: center;
+  float: left;
+  width: 33.3%;
+  /*padding: 30px 0px 62px;*/
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 15px;
 }
 .item-two-left {
   height: 256px;
@@ -104,10 +126,9 @@ p {
   display: none;
 }
 .index-dynamic-map {
-  height: 593px;
+  height: 564px;
 }
 .page-footer {
-  height: 120px;
   background: #f9fbf6;
   font-size: 0px;
   text-align: center;
@@ -116,63 +137,84 @@ p {
   display: inline-block;
   font-size: 14px;
   width: 33.3%;
-  padding-top: 30px;
 }
-.footer-column img {
-  position: relative;
-  display: block;
-  left: 250px;
-  bottom: 30px;
-}
-
-.container-inside {
-  max-width: 1200px;
-  min-width: 768px;
-  margin: 0 auto;
-  padding: 0 6%;
-}
-.filter{
-  padding:0 6%;
+.filter {
   padding-top: 27px;
+  padding-bottom: 40px;
 }
-.filter ul{
-    list-style: none;
-    padding-left: 0px;
+.filter ul {
+  list-style: none;
+  padding-left: 0px;
 }
 .checkbox {
   float: left;
-  min-width: 15.5%;
+  width: 160px;
+  margin-right: 4%;
+}
+form fieldset:nth-child(2) {
+  margin-right: 0;
 }
 .range-filter {
   float: right;
-  min-width: 19.5%;
+  width: 225px;
 }
 .hotels-container {
-  padding:0 6%;
+  padding: 0 6%;
   padding-top: 25px;
 }
-.search-result {
-  padding:0;
-}
 .search-results-sort {
-  padding-right:10%;
+margin-bottom: 40px;
+}
+.search-results-sort h3 {
+float: left;
+font-size: 21px;
+margin-top: 4px;
+margin-right: 7%;
+}
+.search-results-sort p {
+  float: left;
+  width: 90px;
+  margin-top: 5px;
+  margin-right: 3%;
+  font-size: 12px;
+  font-weight: bold;
+}
+.search-results-sort .arrow {
+  float: right;
+  margin-top: 5px;
+  width: 40px;
+  height: 20px;
+}
+
+.search-result figure{
+  float: left;
+  width: 135px;
+  height: 90px;
+  margin: 0px 30px 62px 0px;
+}
+.search-result section{
+  float: left;
+  width: 50%;
+}
+.search-result .star-rating {
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+.search-result .hotel-block p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+.search-result .hotel-block h3 {
+  margin-bottom: 0;
+}
+.search-result .btns a {
+  margin-right: 5px;
+}
+.search-result .text-legent {
   font-size: 0;
 }
-.search-results-sort p{
-  display: inline-block;
+.search-result .text-legent p {
   font-size: 14px;
-  padding-right:5%;
-}
-.hotel-preview {float:left; padding:10px 0;}
-.hotel-block {float:left;}
-.hotel-block h3 {
-margin-bottom:0;}
-.btns a{padding:0 5px;}
-
-.hotel-block p{
-  display:inline-block;
-  padding: 0 5px;
-}
-.star-rating {
-  float:right;
 }
