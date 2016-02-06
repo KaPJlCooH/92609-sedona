@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <header class="main-header container">
+  <div class="container">
+  <header class="main-header">
     <nav class="main-navigator">
       <ul class="main-menu">
         <li><a href="#">Информация</a></li>
@@ -23,7 +24,7 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <div class="filter inner-container clearfix">
       <form action="https://echo.htmlacademy.ru/" method="post" class="clearfix">
         <fieldset class="checkbox">
@@ -51,7 +52,7 @@
               <label for="hostels-field">Гостиница</label>
             </li>
             <li>
-              <input id="hotel-field" type="checkbox" name="hotel">
+              <input id="hotel-field" type="checkbox" name="hotel" checked>
               <label for="hotel-field">Отель</label>
             </li>
             <li>
@@ -70,9 +71,8 @@
             <div class="toggle max-toggle" style="left:180px;"></div>
           </div>
           <div class="price-controls">
-            от
-            <input class="min-price" type="text" value="0"> до
-            <input class="max-price" type="text" value="3 000">
+            <input class="min-price" type="text" value="от 0">
+            <input class="max-price" type="text" value="до 3 000">
           </div>
           <input class="show-btn" type="submit" value="Показать">
         </fieldset>
@@ -86,8 +86,8 @@
         <p><a class="sort-by" href="#">По типу</a></p>
         <p><a class="sort-by" href="#">По рейтингу</a></p>
         <div class="arrow">
-          <a href="#" class="arrow-up"></a>
-          <a href="#" class="arrow-down"></a>
+          <a href="#" class="icon-up-dir"></a>
+          <a href="#" class="icon-down-dir active"></a>
         </div>
       </div>
       <div class="search-result clearfix">
@@ -101,12 +101,12 @@
             <p class="accomodation-price">от 3500 р.</p>
           </div>
           <div class="btns">
-            <a class="more" href="#">Подробнее</a>
-            <a class="booking" href="#">Забронировать</a>
+            <a class="btns more" href="#">Подробнее</a>
+            <a class="btns booking" href="#">Забронировать</a>
           </div>
         </section>
         <div class="star-rating clearfix">
-          <p class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></p>
+          <p class="stars"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></p>
           <div class="rating">Рейтинг: 8,5</div>
         </div>
       </div>
@@ -121,12 +121,12 @@
             <p class="accomodation-price">от 2000 р.</p>
           </div>
           <div class="btns">
-            <a class="more" href="#">Подробнее</a>
-            <a class="booking" href="#">Забронировать</a>
+            <a class="btns more" href="#">Подробнее</a>
+            <a class="btns booking" href="#">Забронировать</a>
           </div>
         </section>
         <div class="star-rating clearfix">
-          <p class="stars"><span class="star"></span><span class="star"></span></p>
+          <p class="stars"><span class="icon-star"></span><span class="icon-star"></span></p>
           <div class="rating">Рейтинг: 8,9</div>
         </div>
       </div>
@@ -141,31 +141,33 @@
             <p class="accomodation-price">от 4000 р.</p>
           </div>
           <div class="btns">
-            <a class="more" href="#">Подробнее</a>
-            <a class="booking" href="#">Забронировать</a>
+            <a class="btns more" href="#">Подробнее</a>
+            <a class="btns booking" href="#">Забронировать</a>
           </div>
         </section>
         <div class="star-rating clearfix">
-          <p class="stars"><span class="star"></span><span class="star"></span><span class="star"></span></p>
+          <p class="stars"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span></p>
           <div class="rating">Рейтинг: 9,2</div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="page-footer container">
+  <footer class="page-footer">
     <section class="footer-column">
       <a class="hashtag" href="http://visitsedona.com">#visitSEDONA</a>
     </section>
     <section class="footer-column">
-      <a class="social-btn">TW</a>
-      <a class="social-btn">FB</a>
-      <a class="social-btn">YOU</a>
+      <a class="social-btn"><span class="icon-twitter"></span></a>
+      <a class="social-btn"><span class="icon-facebook"></span></a>
+      <a class="social-btn"><span class="icon-youtube"></span></a>
     </section>
     <section class="footer-column">
-      <span>Website by</span>
-      <a class="htmlacad-icon" href="http://htmlacademy.ru"><img src="img/academy_logo.png" alt="HTML Academy" width="113" height="39"></a>
+      <a class="academy-logo" href="https://htmlacademy.ru"></a>
+      <!-- Website by -->
+      <!-- <a class="htmlacad-icon" href="http://htmlacademy.ru"><img src="img/academy_logo.png" alt="HTML Academy" width="113" height="39"></a> -->
     </section>
   </footer>
-  
+  </div>
+</body>
 </html>
