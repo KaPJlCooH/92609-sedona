@@ -27,7 +27,7 @@
   <main>
     <div class="filter inner-container clearfix">
       <form action="https://echo.htmlacademy.ru/" method="post" class="clearfix">
-        <fieldset class="checkbox">
+        <fieldset class="checkbox infrastructure">
           <legend>Инфраструктура:</legend>
           <ul>
             <li>
@@ -53,7 +53,7 @@
             </li>
             <li>
               <input id="hotel-field" type="checkbox" name="hotel" checked>
-              <label for="hotel-field">Отель</label>
+              <label for="hotel-field">Мотель</label>
             </li>
             <li>
               <input id="apartment-field" type="checkbox" name="apartment" checked>
@@ -62,7 +62,7 @@
           </ul>
         </fieldset>
         <fieldset class="range-filter">
-          <legend>Стоимость в сутки (Р):</legend>
+          <legend class="cost-per-day">Стоимость в сутки (Р):</legend>
           <div class="range-controls">
             <div class="scale">
               <div class="bar"></div>
@@ -81,14 +81,13 @@
     <section class="hotels-container clearfix">
       <div class="search-results-sort clearfix">
         <h3>Найдено: 3</h3>
-        <p>Сортировка:</p>
-        <p><a class="sort-by picked" href="#">По цене</a></p>
-        <p><a class="sort-by" href="#">По типу</a></p>
-        <p><a class="sort-by" href="#">По рейтингу</a></p>
-        <div class="arrow">
-          <a href="#" class="icon-up-dir"></a>
-          <a href="#" class="icon-down-dir active"></a>
-        </div>
+          <ul class="sort">
+            <li class="sort-title">Сортировка:</li>
+            <li class="by-price"><a class="sort-by picked" href="#">По цене</a></li>
+            <li class="by-type"><a class="sort-by" href="#">По типу</a></li>
+            <li class="by-rating"><a class="sort-by" href="#">По рейтингу</a></li>
+          </ul>
+        <div class="arrow"><a href="#" class="icon-up-dir"></a><a href="#" class="icon-down-dir active"></a></div>
       </div>
       <div class="search-result clearfix">
         <figure class="hotel-preview">

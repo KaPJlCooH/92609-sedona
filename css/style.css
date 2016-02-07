@@ -401,7 +401,7 @@ p {
   opacity: 0.6;
 }
 .page-footer {
-  background: rgba(255,255,255,0.8);
+  background: rgba(254,254,254,0.9);
   font-size: 0px;
   text-align: center;
   padding: 35px 0;
@@ -468,10 +468,11 @@ p {
 }
 .filter {
   padding-top: 27px;
-  padding-bottom: 30px;
+  padding-bottom: 6px;
   background: url("../img/filter_background.jpg") no-repeat top center / cover;
   color: #ffffff;
 }
+
 .filter ul {
   list-style: none;
   padding-left: 0px;
@@ -486,17 +487,14 @@ p {
   font-weight: 500;
   font-size: 14px;
 }
-.checkbox li {
-  padding-bottom: 1px;
-}
 input[type="checkbox"] {
   display: none;
 }
 input[type="checkbox"] + label {
   display: block;
-  margin: 10px 0;
+  margin-bottom: 21px;
   line-height: 26px;
-  padding-left: 45px;
+  padding-left: 39px;
   position: relative;
   cursor: pointer;
 }
@@ -514,16 +512,25 @@ input[type="checkbox"]:checked + label::before {
 .filter legend {
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 15px;
+  padding-bottom: 23px;
 }
 .filter fieldset {
+  padding: 0;
+  margin: 0;
   border: none;
-  font-size: 14px;
   line-height: 21px;
 }
+.filter .cost-per-day {
+  padding-bottom: 12px;
+  padding-left: 3px;
+}
+.filter .infrastructure{
+  margin-right: 80px;
+}
+
 .price-controls {
   font-size: 0;
-  margin: 0;
+  margin-left: 36px;
 }
 .range-filter {
   float: right;
@@ -531,9 +538,8 @@ input[type="checkbox"]:checked + label::before {
   text-align: center;
 }
 .range-filter input {
-  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  width: 38%;
+  width: 39%;
   font-weight: 400;
   line-height: 21px;
   font-size: 14px;
@@ -551,7 +557,9 @@ input[type="checkbox"]:checked + label::before {
   font-size: 14px;
   height: 35px;
   width: 135px;
-  margin-top: 20px;
+  margin-top: 56px;
+  margin-left: 39px;
+  border-radius: 3px;
 }
 .range-filter .show-btn:hover {
   background-color: #ffffff;
@@ -561,7 +569,6 @@ input[type="checkbox"]:checked + label::before {
   margin-right: 0;
 }
 .hotels-container {
-  padding: 0 6%;
   padding-top: 25px;
 }
 .sort-by {
@@ -589,25 +596,49 @@ input[type="checkbox"]:checked + label::before {
   font-size: 12px;
   line-height: 18px;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+  padding-bottom: 26px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 .search-results-sort h3 {
   float: left;
+  display: inline-block;
+  vertical-align: bottom;
   font-size: 21px;
-  margin-top: 4px;
-  margin-right: 7%;
+  padding-right: 47px;
+  padding-top: 9px;
+  margin: 0;
 }
-.search-results-sort p {
+.search-results-sort .sort-title {
+  margin-right: 25px;
+}
+.search-results-sort ul {
   float: left;
-  width: 90px;
-  margin-top: 5px;
-  margin-right: 3%;
+  list-style: none;
+  padding-left: 0;
+  font-size: 0;
+  width: 65%;
+  margin-top: 11px;
+}
+.search-results-sort li {
+  display: inline-block;
+  vertical-align: bottom;;
   font-size: 12px;
   font-weight: bold;
+}
+.search-results-sort ul .by-price{
+  padding-left: 14px;
+}
+.search-results-sort ul .by-type{
+  padding-left: 34px;
+}
+.search-results-sort ul .by-rating{
+  padding-left: 34px;
 }
 .search-results-sort .arrow {
   float: right;
   font-size: 23px;
+  margin-top: 7px;
 }
 .search-results-sort .arrow a{
   text-decoration: none;
@@ -625,6 +656,8 @@ input[type="checkbox"]:checked + label::before {
 .search-result {
   border-bottom: 1px solid #e5e5e5;
   padding: 30px 0;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 .search-result figure {
   float: left;
@@ -642,18 +675,22 @@ input[type="checkbox"]:checked + label::before {
   text-align: right;
 }
 .search-result .icon-star {
-  font-size: 21px;
+  font-size: 16px;
   color: #81b3d2;
+  margin: 0;
+}
+.stars{
+  margin: 0;
 }
 .search-result .rating {
   font-weight: 400;
   background-color: #f2f2f2;
-  padding: 5px 15px;
+  margin-top: 39px;
+  margin-right: 14px;
 }
 .search-result .hotel-block p {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 25px;
   margin: 0;
 }
 .search-result .hotel-block h3 {
@@ -676,12 +713,10 @@ input[type="checkbox"]:checked + label::before {
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 5px;
-  font-size: 14px;
   font-weight: 400;
-  height: 28px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
+
 .search-result .btns .more {
   background-color: #81b3d2;
   padding: 0 17px;
@@ -709,5 +744,5 @@ input[type="checkbox"]:checked + label::before {
   font-size: 0;
 }
 .search-result .accomodation-type {
-  padding-right: 37px;
+  padding-right: 35px;
 }
