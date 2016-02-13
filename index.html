@@ -27,7 +27,7 @@
         <img src="img/welcome.png" alt="Welcome to the gorgeous Sedona" width="458" height="352">
       </div>
       <section class="sedona-intro">
-        <h1>СЕДОНА — небольшой городок в АРИЗОНЕ,<br> зАСЛУЖИвающий большего!</h1>
+        <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <div class="items clearfix">
@@ -36,28 +36,32 @@
           <p>— №1 —</p>
           <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </section>
-        <figure class="item-one-right"></figure>
+        <figure class="item-one-right">
+          <img src="img/sedona_city.jpg" width="800" height="400" alt="Город Седона">
+        </figure>
       </div>
       <div class="items clearfix">
         <section class="feature-item">
-          <img src="img/home.png" width="75" height="72" alt="Жилье">
+          <figure class="feature-img"></figure>
           <h2>Жилье</h2>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </section>
         <section class="feature-item">
-          <img src="img/food.png" width="74" height="70" alt="Еда">
+          <figure class="feature-img food"></figure>
           <h2>ЕДА</h2>
           <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
         </section>
         <section class="feature-item gifts">
-          <img src="img/souvenir.png" width="64" height="76" alt="Сувениы">
+          <figure class="feature-img souvenir"></figure>
           <h2>СУВЕНИРЫ</h2>
           <p>Не только китайского,
             <br> но и местного производства!</p>
         </section>
       </div>
       <div class="items clearfix">
-        <figure class="item-two-left"></figure>
+        <figure class="item-two-left">
+          <img src="img/diablo_bridge.jpg" width="800" height="400" alt="Мост дьявола">
+        </figure>
         <section class="item-two-right">
           <h2>ТАМ ЕСТЬ<br> Мост дьявола</h2>
           <p>— №2 —</p>
@@ -97,41 +101,40 @@
             <input class="date" id="out-date" type="text" name="calendar-out" value="4 июля 2014">
             <button class="icon-calendar" type="button"></button>
           </div>
-          <div class="input-date clearfix">
-            <label class="grown-label" for="grown-id">Взрослые:</label>
-            <div class="visitor">
-              <button class="button-pm" type="button"><span class="icon-minus"></span></button>
-              <input class="people" type="text" name="number" id="grown-id" value="2">
-              <button class="button-pm" type="button"><span class="icon-plus"></span></button>
-            </div>
+          <div class="visitor adult">
+            <label class="adult-label" for="adult-id">Взрослые:</label>
+            <button class="icon-minus" type="button"></button>
+            <input class="people" type="text" name="number" id="adult-id" value="2">
+            <button class="icon-plus" type="button"></button>
+          </div>
+          <div class="visitor children">
             <label class="children-label" for="children-id">Дети:</label>
-            <div class="visitor">
-              <button class="button-pm" type="button"><span class="icon-minus"></span></button>
-              <input class="people" type="text" name="number" id="children-id" value="0">
-              <button class="button-pm" type="button"><span class="icon-plus"></span></button>
-            </div>
+            <button class="icon-minus" type="button"></button>
+            <input class="people" type="text" name="number" id="children-id" value="0">
+            <button class="icon-plus" type="button"></button>
           </div>
           <input class="btn-hotels-search" type="submit" value="Найти">
         </form>
       </div>
-      <div class="index-dynamic-map">
-      </div>
     </main>
+<div class="map-footer-wrapper">
+  <div class="index-dynamic-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837905.9206294408!2d-112.99830739779027!3d34.8795884355553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1455375762024" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+  <footer class="page-footer clearfix">
+    <div class="footer-column hashtag">
+      <a class="hashtag" href="http://visitsedona.com">#visitSEDONA</a>
+    </div>
+    <div class="footer-column">
+      <a class="social-btn"><span class="icon-twitter"></span></a>
+      <a class="social-btn"><span class="icon-facebook"></span></a>
+      <a class="social-btn"><span class="icon-youtube"></span></a>
+    </div>
+    <div class="footer-column logo">
+      <span>Website by</span>
+      <a class="academy-logo" href="https://htmlacademy.ru"></a>
+    </div>
+  </footer>
+</div>
 
-    <footer class="page-footer clearfix">
-      <div class="footer-column hashtag">
-        <a class="hashtag" href="http://visitsedona.com">#visitSEDONA</a>
-      </div>
-      <div class="footer-column">
-        <a class="social-btn"><span class="icon-twitter"></span></a>
-        <a class="social-btn"><span class="icon-facebook"></span></a>
-        <a class="social-btn"><span class="icon-youtube"></span></a>
-      </div>
-      <div class="footer-column-logo">
-        <span>Website by</span>
-        <a class="academy-logo" href="https://htmlacademy.ru"></a>
-      </div>
-    </footer>
   </div>
 </body>
 
