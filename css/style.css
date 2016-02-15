@@ -469,16 +469,12 @@ button {
 }
 
 .icon-calendar:hover ~ input {
-    outline: 2px solid #000000;
+    background-color: #ebebeb;
 }
 
 .booking-form .icon-calendar:active {
     color: #81b3d2;
     border: none;
-}
-.icon-calendar:active ~ input {
-    outline: 2px solid #81b3d2;
-    color: #81b3d2;
 }
 
 .visitor {
@@ -555,32 +551,24 @@ button {
     color: #000000;
 }
 .icon-minus:hover ~ input {
-    outline: 2px solid #000000;
+    background-color: #ebebeb;
 }
 
 .booking-form .icon-plus:hover {
     color: #000000;
 }
 .icon-plus:hover ~ input {
-    outline: 2px solid #000000;
+    background-color: #ebebeb;
 }
 
 
 .booking-form .icon-plus:active {
     color: #81b3d2;
 }
-.icon-plus:active ~ input {
-    outline: 2px solid #81b3d2;
-    color: #81b3d2;
-}
+
 .booking-form .icon-minus:active {
     color: #81b3d2;
 }
-.icon-minus:active ~ input {
-    outline: 2px solid #81b3d2;
-    color: #81b3d2;
-}
-
 
 .booking-form .btn-hotels-search {
     font-size: 21px;
