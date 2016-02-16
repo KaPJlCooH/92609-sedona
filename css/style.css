@@ -386,17 +386,16 @@ button {
 
 .booking-form-page{
     display: block;
-    position: relative;
-    background: none;
-    box-shadow: none;
-    top: 100px;
+    position: static;
     background-color: rgba(255,255,255,0.85);
     border-radius: 6px;
+    margin: 0 auto;
 }
 
 .form-page {
-    height: 80vh;
+    height: 65vh;
     background: #658eb4 url("../img/form_page_bg.jpg") no-repeat 50% 21% /cover;
+    padding-top: 100px;
 }
 
 .booking-form-show {
@@ -1149,9 +1148,8 @@ input[type="checkbox"]:disabled + label {
 
 .search-result .text-legend {
     font-weight: normal;
-    width: 184px;
+    width: 260px;
     line-height: 21px;
-    display: inline;
 }
 
 .search-result .accomodation-type {
