@@ -75,6 +75,7 @@ button {
 .main-menu {
     width: 88%;
     margin: 0;
+    font-size: 0;
     padding: 0 6%;
     text-align: center;
 }
@@ -89,29 +90,32 @@ button {
 .main-menu li {
     display: inline-block;
     vertical-align: top;
-    padding-top: 12px;
-    padding-bottom: 17px;
+    padding-top: 13px;
+    padding-bottom: 16px;
     position: relative;
     font-size: 14px;
     line-height: 21px;
-    width: 19%;
+    width: 22.72%;
 }
 
 .main-menu li:first-child {
-    right: 1.7%;
     text-align: left;
 }
 
 .main-menu li:nth-child(2) {
-    right: 3%;
+    text-align: left;
+}
+
+.main-menu li:nth-child(3) {
+    text-align: right;
+    width: 9.12%;
 }
 
 .main-menu li:nth-child(4) {
-    left: 3.7%;
+    text-align: right;
 }
 
 .main-menu li:nth-child(5) {
-    left: 2%;
     text-align: right;
 }
 
