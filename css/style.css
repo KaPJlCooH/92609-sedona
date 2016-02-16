@@ -162,7 +162,7 @@ button {
     padding: 76px 0 74px;
     position: relative;
     text-align: center;
-    background: url("../img/background_photo_mask.png") no-repeat center bottom / 100%, #5c4c4a url("../img/background_photo.jpg") no-repeat 50% 21% /cover;
+    background: url("../img/background_photo_mask.png") no-repeat center bottom / 100% 57px, #5c4c4a url("../img/background_photo.jpg") no-repeat 50% 21% /cover;
 }
 
 .sedona-intro {
