@@ -8,18 +8,16 @@ openClose.addEventListener("click", function(event) {
 
 
 function initialize() {
-  var mapOptions = {
-    zoom: 10,
-    center: new google.maps.LatLng(34.8390006,-111.840093)
-  }
-  var map = new google.maps.Map(document.getElementById('map-canvas'),
-                                mapOptions);
-  var image = "img/map-logo.png";
-  var myLatLng = new google.maps.LatLng(34.877,-111.762);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: image
-  });
+    var mapOptions = {
+        zoom: 10,
+        center: new google.maps.LatLng(34.8390006, -111.840093)
+    }
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+    var myLatLng = new google.maps.LatLng(34.877, -111.762);
+    var beachMarker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+    });
 }
 google.maps.event.addDomListener(window, 'load', initialize);

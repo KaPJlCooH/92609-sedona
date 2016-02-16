@@ -56,11 +56,10 @@ p {
 
 button {
     border: 0;
-    padding: 0;  
+    padding: 0;
 }
 
 .container {
-    position: relative;
     max-width: 1200px;
     min-width: 768px;
     margin: 0 auto;
@@ -157,7 +156,7 @@ button {
     padding: 76px 0 74px;
     position: relative;
     text-align: center;
-    background: url("../img/background_photo_mask.png") no-repeat center bottom / 100%, #658eb4 url("../img/background_photo.jpg") no-repeat 50% 21% /cover;
+    background: url("../img/background_photo_mask.png") no-repeat center bottom / 100%, #5c4c4a url("../img/background_photo.jpg") no-repeat 50% 21% /cover;
 }
 
 .sedona-intro {
@@ -223,7 +222,7 @@ button {
     vertical-align: top;
     width: 75px;
     height: 72px;
-    background: url(../img/index-sprite.png) no-repeat -10px -10px;
+    background: url(../img/index_sprite.png) no-repeat -10px -10px;
     background-position: -10px -277px;
 }
 
@@ -283,7 +282,7 @@ button {
 
 .item-one-right img,
 .item-two-left img {
-    background-color: #81b3d2;
+    background-color: #8c6655;
     max-width: 100%;
     height: auto;
     min-height: 256px;
@@ -381,9 +380,23 @@ button {
     margin-left: -285px;
     width: 460px;
     padding: 55px;
-    margin-bottom: 78px;
     background-color: #ffffff;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.booking-form-page{
+    display: block;
+    position: relative;
+    background: none;
+    box-shadow: none;
+    top: 100px;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 6px;
+}
+
+.form-page {
+    height: 80vh;
+    background: #658eb4 url("../img/form_page_bg.jpg") no-repeat 50% 21% /cover;
 }
 
 .booking-form-show {
@@ -431,8 +444,8 @@ button {
     background-color: #f2f2f2;
     border: none;
     float: left;
-    width: 340px;
-    max-width: 340px;
+    width: 345px;
+    max-width: 345px;
     padding: 5px 0;
     padding-left: 11px;
     padding-right: 40px;
@@ -597,10 +610,10 @@ button {
 
 .index-dynamic-map {
     overflow: hidden;
-    margin: 0;          
+    margin: 0;
     padding: 0;
-    height: 590px;
-    background: #f2f1ef url("../img/map.jpg") no-repeat bottom center;
+    height: 594px;
+    background: #d3e0b7 url("../img/map.jpg") no-repeat bottom center;
 }
 
 .page-footer {
@@ -609,7 +622,9 @@ button {
     padding: 36px 0;
     text-align: center;
     width: 100%;
-    position: absolute;
+    position: relative;
+}
+.index-footer {
     margin-top: -120px;
 }
 
@@ -681,7 +696,7 @@ button {
     vertical-align: top;
     width: 113px;
     height: 39px;
-    background: url(../img/index-sprite.png) no-repeat -10px -10px;
+    background: url(../img/index_sprite.png) no-repeat -10px -10px;
 }
 
 .academy-logo:hover {
@@ -757,6 +772,7 @@ input[type="checkbox"]:disabled + label {
     padding: 0;
     margin: 0;
     float: left;
+    width: 160px;   
     border: none;
     line-height: 21px;
 }
@@ -895,7 +911,6 @@ input[type="checkbox"]:disabled + label {
 
 .hotels-container {
     padding-top: 25px;
-    margin-bottom: 124px;
 }
 
 .sort-by {
@@ -928,7 +943,7 @@ input[type="checkbox"]:disabled + label {
     font-size: 12px;
     line-height: 18px;
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 17px;
+    padding-bottom: 22px;
     padding-left: 6%;
     padding-right: 6%;
 }
@@ -984,6 +999,7 @@ input[type="checkbox"]:disabled + label {
 
 .search-results-sort .arrow {
     float: right;
+    width: 60px;
     font-size: 23px;
     margin-top: 7px;
     position: relative;
@@ -1018,7 +1034,7 @@ input[type="checkbox"]:disabled + label {
 
 .search-result {
     border-bottom: 1px solid #e5e5e5;
-    padding:15px 5% 22px 6%;
+    padding:10px 5% 29px 6%;
 }
 
 .search-result figure {
@@ -1035,6 +1051,7 @@ input[type="checkbox"]:disabled + label {
 
 .search-result .star-rating {
     float: right;
+    width: 130px;
     text-align: right;
 }
 
@@ -1056,9 +1073,8 @@ input[type="checkbox"]:disabled + label {
     font-weight: normal;
     line-height: 21px;
     background-color: #f2f2f2;
-    margin-top: 35px;
-    margin-right: 15px;
-    padding: 5px 10px;
+    margin: 35px 15px 0 10px;
+    padding: 4px 10px;
 }
 
 .hotel-block p {
@@ -1087,19 +1103,25 @@ input[type="checkbox"]:disabled + label {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.btns-group {
+    font-size: 0;
+}
+
 .search-result .btns {
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 7px;
+    margin-top: 14px;
+    margin-right: 6px
+
 }
 
 .more {
     background-color: #81b3d2;
     padding: 0 17px;
-    margin-right: 2px
 }
 
 .more:hover {
@@ -1127,14 +1149,18 @@ input[type="checkbox"]:disabled + label {
 
 .search-result .text-legend {
     font-weight: normal;
-    width: 181px;
+    width: 184px;
     line-height: 21px;
+    display: inline;
 }
 
 .search-result .accomodation-type {
     float: left;
+    width: 111px;
+    margin-right: 6px;
 }
 
 .search-result .accomodation-price {
-    float: right;
+    float: left;
+    width: 140px;
 }

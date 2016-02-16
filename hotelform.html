@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <svgxmlns="http://www.w3.org/2000/svg" version="1.1">
+</head>
+
+<body>
+    <div class="container clearfix">
+        <header class="main-header">
+            <nav class="main-navigator">
+                <ul class="main-menu">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и видео</a></li>
+                    <li>
+                        <a href="index.html"><img class="main-logo" src="img/logo.png" width="138" height="70" alt="City of Sedona"></a>
+                    </li>
+                    <li><a href="#">Карта штата</a></li>
+                    <li class="active-item"><a href="#">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="form-page clearfix">
+                <form class="booking-form booking-form-page clearfix" action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="input-date clearfix">
+                        <label class="label-date" for="in-date">Дата заезда: </label>
+                        <button class="icon-calendar" type="button"></button>
+                        <input class="date" id="in-date" type="text" name="calendar-in" value="24 апреля 2014" required>
+                    </div>
+                    <div class="input-date clearfix">
+                        <label class="label-date" for="out-date">Дата выезда: </label>
+                        <button class="icon-calendar" type="button"></button>
+                        <input class="date" id="out-date" type="text" name="calendar-out" value="4 июля 2014" required>
+                    </div>
+                    <div class="visitor adult">
+                        <label class="adult-label" for="adult-id">Взрослые:</label>
+                        <button class="icon-minus" type="button"></button>
+                        <button class="icon-plus" type="button"></button>
+                        <input class="people" type="text" name="adult-number" id="adult-id" value="2" required>
+                    </div>
+                    <div class="visitor children">
+                        <label class="children-label" for="children-id">Дети:</label>
+                        <button class="icon-minus" type="button"></button>
+                        <button class="icon-plus" type="button"></button>
+                        <input class="people" type="text" name="children-number" id="children-id" value="0" required>
+                    </div>
+                    <input class="btn-hotels-search" type="submit" value="Найти">
+                </form>
+            </div>
+        </main>
+        <footer class="page-footer clearfix">
+            <div class="footer-column hashtag">
+                <a class="hashtag" href="http://visitsedona.com">#visitSEDONA</a>
+            </div>
+            <div class="footer-column">
+                <a class="social-btn"><span class="icon-twitter"></span></a>
+                <a class="social-btn"><span class="icon-facebook"></span></a>
+                <a class="social-btn"><span class="icon-youtube"></span></a>
+            </div>
+            <div class="footer-column logo">
+                <span>Website by</span>
+                <a class="academy-logo" href="https://htmlacademy.ru"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
